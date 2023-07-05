@@ -12,7 +12,10 @@ function Hero() {
                 <p className="mb-10 text-center">
                 In my digital world, I fuse the elegance of design with the magic of code to create captivating and functional web experiences. With every line of code and every carefully designed pixel, I build a bridge between imagination and digital reality. 
                 </p>
+                <div>
                 <Button text="Contact me" />
+                <Button text="More about me" />
+                </div>
             </div>
             <div className="w-[50%] border-4 border-primary flex flex-col justify-end items-end">
                 <img src={Photo} alt="Perfil" className="w-[70%]"/>

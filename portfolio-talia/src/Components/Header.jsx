@@ -1,4 +1,4 @@
-import Logo from "../Assets/Ilustración_sin_título.png"
+import Logo from "../Assets/Ilustración_sin_título 4.png"
 import {RiMenu3Fill, RiCloseLine} from "react-icons/ri";
 import { useState } from "react";
 
