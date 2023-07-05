@@ -1,22 +1,23 @@
+import Button from "../Shared/Button/Button"
+import Photo from "../Assets/photoperfil.png"
 
 function Hero() {
 
     return (
-        <section className="flex flex-row">
-            <div className="flex flex-col w-[50%] bg-red-500 align-center items-center m-10 p-20">
+        <section className="flex flex-row mt-10">
+            <div className="flex flex-col w-[50%] align-center items-center m-10 p-10">
                 <h1 className="text-xl m-10 text-center font-mono">
-                Creando experiencias digitales cautivadoras
+                Creating captivating digital experiences
                 </h1>
                 <p className="mb-10 text-center">
-                En mi mundo digital, fusiono la elegancia del diseño con la magia del código para crear experiencias web cautivadoras y funcionales. Con cada línea de código y cada píxel cuidadosamente diseñado, construyo un puente entre la imaginación y la realidad digital. 
+                In my digital world, I fuse the elegance of design with the magic of code to create captivating and functional web experiences. With every line of code and every carefully designed pixel, I build a bridge between imagination and digital reality. 
                 </p>
-                <button>
-                    Contact me
-                </button>
+                <Button text="Contact me" />
             </div>
-            <div className="w-[50%] bg-blue-500">
-                <p>foto</p>
+            <div className="w-[50%] border-4 border-primary flex flex-col justify-end items-end">
+                <img src={Photo} alt="Perfil" className="w-[70%]"/>
             </div>
+
         </section>
 
         )
