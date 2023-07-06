@@ -18,10 +18,13 @@ const Header =()=>{
                     Home
                 </a>
                 <a href="">
-                    About me
+                    Portfolio
                 </a>
                 <a href="">
-                    Projects
+                    Servicies
+                </a>
+                <a href="">
+                    Contact
                 </a>
             </nav>
             <button className="text-2xl p-2 xl:hidden" onClick={()=> setShowMenu(!showMenu)}> 
