@@ -3,14 +3,15 @@ import Photo from "../Assets/photoperfil.png"
 import Figma from "../Assets/figmalogo.png"
 import ReactLogo from "../Assets/reactlogo.png"
 import JSLogo from "../Assets/jslogo.png"
-i
+import { Link } from "react-router-dom"
+
 
 
 function Hero() {
     
 
     return (
-        <body>
+        <div>
             <section className="flex flex-row mt-10 max-md:flex-col">
                 <div className="flex flex-col w-[50%] align-center items-center m-10 p-10 max-md:w-[100%] max-md:p-3 max-md:m-0 max-lg:p-0">
                     <h1 className="text-xl m-10 text-center font-mono max-md:m-0">
@@ -20,11 +21,10 @@ function Hero() {
                     In my digital world, I fuse the elegance of design with the magic of code to create captivating and functional web experiences. With every line of code and every carefully designed pixel, I build a bridge between imagination and digital reality. 
                     </p>
                     <div className="max-ms:">
-                    <Button text="Contact me" />
+                    <Link to='/contact'><Button text="Contact me"/></Link>
                     </div>
                 </div>
-                <div className="w-[50%] border-4 border-primary flex flex-col justify-end items-end max-md:w-[100%] max-md:absolute max-md:pt-72 max-ms:pt-40">
-                    <img src={Photo} alt="Perfil" className="w-[70%] max-ms:w-[30%] max-md:w-[30%]"/>
+                <div className="w-[50%] border-4 border-primary flex flex-col justify-end items-end max-md:w-[100%] max-md:absolute max-md:pt-72 max-ms:pt-40 z-0">                    <img src={Photo} alt="Perfil" className="w-[70%] max-ms:w-[30%] max-md:w-[30%]"/>
                     <img src={Figma} className=" max-md:w-5 max-md:h-5 w-20 h-20 object-cover rounded-full border-l-8 border-gray-600 absolute max-md:top-[70%]  top-[30%] right-[5%]"/>
                     <img src={ReactLogo} className="max-md:w-5 max-md:h-5 w-20 h-20 object-cover rounded-full border-l-8 border-gray-500 absolute max-md:top-[75%] top-[25%] right-[32%]"/>
                     <img src={JSLogo} className="max-md:w-5 max-md:h-5 w-20 h-20 object-cover rounded-full border-l-8 border-yellow-200 absolute max-md:top-[85%] top-[70%] right-[35%]"/>
@@ -47,7 +47,7 @@ function Hero() {
                 </div>
             </section>
 
-        </body>
+        </div>
 
         )
 }

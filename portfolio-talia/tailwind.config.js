@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     borderRadius:{
-      't-3xl': '75px 75px 0 0'
+      't-3xl': '75px 75px 0 0',
+      'full': '9999px',
+      'lg': '0.5rem'
     },
     fontSize: {
       sm: '16px',
