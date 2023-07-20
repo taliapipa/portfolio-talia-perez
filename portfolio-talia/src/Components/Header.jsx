@@ -16,16 +16,13 @@ const Header =()=>{
                 showMenu ? "left-0" : "-left-full"}
                 top-0 xl:static flex-1 flex flex-col xl:flex-row justify-center items-center gap-10 text-sm text-gray-400 transition-all`}>
 
-                    <Link to='/'>Home</Link>
+                    <Link to='/' className="hover:text-gray-600">Home</Link>
     
 
-                    <Link to='/portfolio'>Portfolio</Link>
+                    <Link to='/portfolio' className="hover:text-gray-600">Portfolio</Link>
     
 
-                    <Link to='/servicies'>Servicies</Link>
-    
-
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact' className="hover:text-gray-600">Contact</Link>
     
             </nav>
             <button className="text-2xl p-2 xl:hidden" onClick={()=> setShowMenu(!showMenu)}> 

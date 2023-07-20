@@ -45,13 +45,13 @@ const Contact =()=>{
 
 
     return (
-        <form onSubmit={onSubmit} className="flex justify-center align-center flex-col text-center m-40 font-mono">
+        <form onSubmit={onSubmit} className="flex justify-center items-center flex-col text-center m-40 font-mono">
             <label htmlFor="email">Email:</label>
-            <input type='email' id='email' className="border-2 rounded-lg" required />
+            <input type='email' id='email' className="border-2 rounded-lg w-[50%]" required />
             <label htmlFor="name">Name:</label>
-            <input type='text' id='name' className="border-2 rounded-lg" required />
+            <input type='text' id='name' className="border-2 rounded-lg  w-[50%]" required />
             <label htmlFor="message">Message:</label>
-            <input type='text' id='message' className="border-2 rounded-lg h-20" required />
+            <input type='text' id='message' className="border-2 rounded-lg h-20  w-[50%]" required />
             <Button type="submit" text='Contact me' />
 
         </form>
